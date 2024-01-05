@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Responsive Grid</title>
     <link rel="stylesheet" href="output.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <div class="grid place-items-center min-h-screen bg-gray-800 text-white font-serif">
+  <div class="grid place-items-center min-h-screen bg-gray-800 text-white font-serif" id="container">
+      <div id="toggle-theme-btn" class="bg-slate-500" style="transition: background-color 0.5s; padding: 10px; border: 1px solid white; border-radius: 30px"       <div id="toggle-theme-btn" class="bg-slate-500" style="padding: 10px; border: 1px solid white; border-radius: 30px color::hover: white" onmouseover="this.style.backgroundColor='#84948b';" onmouseout="this.style.backgroundColor='#64748b';">
+        <span>
+          Toggle Theme
+        </span>
+      </div>
         <!-- Responsive Grid Layout -->
         <div class="p-4 max-w-5xl grid gap-4 xs:grid-cols-2 xs:p-8 md:grid-cols-4 lg:gap-15">
           <h1 class="text-4xl font-extrabold xs:col-span-2 xs:grid xs:gap-4 xs:grid-cols-2 md:col-span-3 md:text-5xl md:grid-cols-3 lg:text-6xl">
