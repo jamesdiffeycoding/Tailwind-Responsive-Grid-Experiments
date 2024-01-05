@@ -1,6 +1,6 @@
 let container = document.getElementById("container")
 
-let currentTheme=0;
+let currentTheme=1;
 function toggleThemeFunction() {
     if (currentTheme == 0) {
         container.style.color = "white";
